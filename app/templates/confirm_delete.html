@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container">
+<form method="POST">
+  <p>Вы точно хотите удалить {{ item.name }} с инвентарным номером {{ item.category.code }}{{ item.code_end }}?</p>
+  <button type="submit" class="btn btn-danger">Удалить</button>
+</form>
+</div>
+{% endblock content %}
